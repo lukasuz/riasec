@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+    <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+    <script language="javascript" type="text/javascript" src="actions.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+    <script src="firebase.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <title>RIASEC</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="canvas" class="row">
+        </div>
+        <div class="controls">
+        <div id="rightButtons" class="row">
+            <div class="two columns">
+                <label for="currentUser">user</label>
+                <select class="u-full-width" id="currentUser" onchange="drawSelectedUser()">
+                </select>
+            </div>
+            <div class="two columns">
+              <input class="button-primary submit" value="fetchData" type="submit" onclick="fetchData()">
+            </div>
+
+            <div class="two columns">&nbsp;</div>
+            <div class="six columns">
+              <input class="button" value="all" type="submit" onclick="drawAll()">
+              <input class="button" value="female" type="submit" onclick="drawFemales()">
+              <input class="button" value="male" type="submit" onclick="drawMales()">
+              <input class="button-primary submit" value="clear" type="submit" onclick="clearHexagon()">
+          </div>
+        </div>
+        <!-- <div class="row">
+            <div class="one column">
+                <label for="R">R</label>
+                <input class="short" placeholder="..." id="R" type="text">
+            </div>
+            <div class="one column">
+                <label for="I">I</label>
+                <input class="short" placeholder="..." id="I" type="text">
+            </div>
+            <div class="one column">
+                <label for="A">A</label>
+                <input class="short" placeholder="..." id="A" type="text">
+            </div>
+            <div class="one column">
+                <label for="S">S</label>
+                <input class="short" placeholder="..." id="S" type="text">
+            </div>
+            <div class="one column">
+                <label for="E">E</label>
+                <input class="short" placeholder="..." id="E" type="text">
+            </div>
+            <div class="one column">
+                <label for="C">C</label>
+                <input class="short" placeholder="..." id="C" type="text">
+            </div>
+            <div class="two columns">
+                <label for="Gender">gender</label>
+                <select class="u-full-width" id="Gender">
+                <option value="female">female</option>
+                <option value="male">male</option>
+            </select>
+            </div>
+            <div class="two columns">
+                <label for="Name">name</label>
+                <input placeholder="Erika" id="Name" type="text">
+            </div>
+            <div class="two columns">
+            <input class="button-primary submit" value="submit" type="submit" onclick="submitPress()">
+            </div>
+        </div> -->
+      </div>
+    </div>
+</body>
+
+</html>

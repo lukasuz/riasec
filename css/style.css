@@ -1,0 +1,30 @@
+
+.short{
+  width: 50px;
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%
+}
+input {
+  max-width: 100%;
+}
+#canvas {
+  max-width: 100%;
+  height: 445px;
+  margin-bottom: 20px;
+}
+.controls {
+  background-color: #ffffff;
+  border: 1px solid #efefef;
+  padding: 5px 30px;
+  margin-bottom: 30px;
+}
+.submit, .button {
+  margin-top: 28px;
+  padding: 0 20px !important;
+}
+.row {
+  margin-bottom: 20px;
+}
